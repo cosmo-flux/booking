@@ -4,3 +4,5 @@ pnpm-lock.yaml
 tsconfig.json
 eslint.config.js
 prettier.config.js
+.eslintrc.json
+.prettierrc.cjs

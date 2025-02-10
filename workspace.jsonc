@@ -32,11 +32,11 @@
     "resolveEnvsFromRoots": true
   },
   /**
-  * Enable generator templates by uncommenting the desired environments below.
-  * These generators scaffold components for Node, React, Vue, and Angular.
-  * After uncommenting, run `bit install` to make them available in your workspace.
-  * Explore more dev environments at: https://bit.dev/docs/getting-started/composing/dev-environments
-  **/
+   * Enable generator templates by uncommenting the desired environments below.
+   * These generators scaffold components for Node, React, Vue, and Angular.
+   * After uncommenting, run `bit install` to make them available in your workspace.
+   * Explore more dev environments at: https://bit.dev/docs/getting-started/composing/dev-environments
+   **/
   "teambit.generator/generator": {
     "envs": [
       //  "bitdev.node/node-env",
@@ -44,17 +44,30 @@
       //  "bitdev.vue/vue-env",
       //  "bitdev.angular/angular-env"
       //  "bitdev.symphony/envs/symphony-env"
+      "cosmo-flux.design/envs/material-ui-env"
     ]
   },
   /**
    * main configuration for component dependency resolution.
    **/
   "teambit.dependencies/dependency-resolver": {
-    "rootComponents": true,
     "policy": {
-      "dependencies": {},
+      "dependencies": {
+        "@cosmo-flux/design.data-display.typography": "^0.0.1",
+        "@cosmo-flux/design.inputs.button": "^0.0.1",
+        "@cosmo-flux/design.inputs.form": "^0.0.1",
+        "@cosmo-flux/design.inputs.input": "^0.0.1",
+        "@cosmo-flux/design.inputs.select": "^0.0.1",
+        "@cosmo-flux/design.inputs.text-field": "^0.0.1",
+        "@cosmo-flux/design.layout.box": "^0.0.1",
+        "@cosmo-flux/design.layout.container": "^0.0.1",
+        "@cosmo-flux/design.navigation.menu": "^0.0.1",
+        "@cosmo-flux/foundation.subscriber": "^0.0.1"
+      },
       "peerDependencies": {}
-    }
+    },
+    "linkCoreAspects": true,
+    "rootComponents": true
   },
   "teambit.workspace/workspace-config-files": {
     "enableWorkspaceConfigWrite": true

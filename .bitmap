@@ -9,5 +9,26 @@
  */
 
 {
+    "booking-mfe": {
+        "name": "booking-mfe",
+        "scope": "cosmo-flux.booking",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "booking/booking-mfe"
+    },
+    "forms/reservation-form": {
+        "name": "forms/reservation-form",
+        "scope": "cosmo-flux.booking",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "booking/forms/reservation-form"
+    },
+    "pages/red-planet-reservations": {
+        "name": "pages/red-planet-reservations",
+        "scope": "cosmo-flux.booking",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "booking/pages/red-planet-reservations"
+    },
     "$schema-version": "17.0.0"
 }
